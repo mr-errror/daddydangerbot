@@ -4,6 +4,12 @@ from discord import app_commands
 from discord.ext import commands
 import datetime
 from typing import Optional
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Bot is running!"
 
 intents = discord.Intents.default()
 intents.message_content = True
