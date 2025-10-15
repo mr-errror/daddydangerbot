@@ -1,10 +1,11 @@
 # bot.py
+from flask import Flask
 import discord
 from discord import app_commands
 from discord.ext import commands
 import datetime
 from typing import Optional
-from flask import Flask
+
 app = Flask(__name__)
 
 @app.route("/")
