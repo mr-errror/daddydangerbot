@@ -1,10 +1,23 @@
 # bot.py
-from flask import Flask
 import discord
 from discord import app_commands
 from discord.ext import commands
 import datetime
 from typing import Optional
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+Thread(target=run).start()
+
 
 app = Flask(__name__)
 
