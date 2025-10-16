@@ -299,4 +299,4 @@ async def on_app_command_error(interaction: discord.Interaction, error: app_comm
 # Run the bot
 import os
 TOKEN = os.getenv("BOT_TOKEN")
-
+bot.run(TOKEN)
