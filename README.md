@@ -1,0 +1,1 @@
+this is just an stupid discord bot which i made for moderation and other fun stuff, its made in python and uses "flask" to open a port... so render deploys the bot with no problem and ugh i use another bot to keep an eye on my bot's port so whenver it gets inactive... it helps me to get it back active 
