@@ -13,7 +13,19 @@ import math
 import random
 from collections import defaultdict, deque
 from dataclasses import dataclass, asdict
+from flask import Flask
+from threading import Thread
 
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+Thread(target=run).start()
 from dotenv import load_dotenv
 load_dotenv()
 
