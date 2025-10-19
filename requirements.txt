@@ -1,6 +1,6 @@
 aiohappyeyeballs==2.6.1
-dotenv==1.1.1
-aiosqlite==0.21.0
+dotenv
+aiosqlite
 aiohttp==3.12.15
 aiosignal==1.4.0
 annotated-types==0.7.0
@@ -34,3 +34,4 @@ tqdm==4.67.1
 typing-inspection==0.4.1
 typing_extensions==4.14.1
 yarl==1.20.1
+
